@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agentic Meeting Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Agentic Meeting Assistant</h1>
+  <span>ingest → extract → human review → approved side effects</span>
+</header>
+
+<main>
+  <div class="card">
+    <h2>1. Upload a transcript</h2>
+    <form class="upload" id="uploadForm">
+      <label>Transcript file (.txt / .vtt / .srt)
+        <input type="file" id="fileInput" accept=".txt,.vtt,.srt" required>
+      </label>
+      <label>Meeting date
+        <input type="date" id="meetingDate" required>
+      </label>
+      <button type="submit" id="processBtn">Process meeting</button>
+    </form>
+    <p class="hint">Try one of the sample transcripts in <code>data/sample_transcripts/</code>. Re-uploading the exact same file will not create a duplicate meeting.</p>
+    <div id="uploadError" class="error"></div>
+  </div>
+
+  <div id="results" style="display:none;">
+    <div class="card summary">
+      <h2>Structured meeting record</h2>
+      <p id="execSummary"></p>
+      <h3>Decisions</h3>
+      <ul id="decisionsList"></ul>
+      <h3>Open questions</h3>
+      <ul id="openQuestionsList"></ul>
+      <h3>Risks / blockers</h3>
+      <ul id="risksList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>2. Review action items</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:26%">Task</th>
+            <th>Owner</th>
+            <th>Due date</th>
+            <th>Priority</th>
+            <th>Confidence</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="itemsBody"></tbody>
+      </table>
+      <div style="margin-top:16px;">
+        <button id="finalizeBtn">Finalize &amp; send approved items to Slack</button>
+        <span id="finalizeResult" class="hint"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3. Audit log</h2>
+      <div id="auditList"></div>
+    </div>
+  </div>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

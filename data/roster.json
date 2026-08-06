@@ -1,0 +1,7 @@
+[
+  {"name": "Priya Sharma", "aliases": ["Priya"], "email": "priya.sharma@example.com", "slack_id": "U01PRIYA"},
+  {"name": "Rahul Nair", "aliases": ["Rahul"], "email": "rahul.nair@example.com", "slack_id": "U02RAHUL"},
+  {"name": "Ananya Iyer", "aliases": ["Ananya"], "email": "ananya.iyer@example.com", "slack_id": "U03ANANYA"},
+  {"name": "Karthik Reddy", "aliases": ["Karthik"], "email": "karthik.reddy@example.com", "slack_id": "U04KARTHIK"},
+  {"name": "Fatima Sheikh", "aliases": ["Fatima"], "email": "fatima.sheikh@example.com", "slack_id": "U05FATIMA"}
+]

@@ -1,0 +1,18 @@
+[00:00:05] Priya: Morning everyone, quick standup. Let's go around. Rahul, you first.
+[00:00:12] Rahul: Sure. I finished the auth refactor yesterday. Today I'll start on the rate limiter.
+[00:00:20] Priya: Nice. Any blockers?
+[00:00:23] Rahul: Not yet, but I might need the staging Redis instance by Thursday to test it properly.
+[00:00:30] Ananya: I can get you access to staging Redis, I'll do that by end of day today.
+[00:00:38] Priya: Great, thanks Ananya. Karthik, how's the billing migration going?
+[00:00:45] Karthik: Slower than expected. The legacy schema has some edge cases with proration. I think we should push the migration date.
+[00:00:55] Priya: How much of a push?
+[00:00:57] Karthik: I'd say by next Friday instead of this Friday.
+[00:01:02] Priya: Okay, let's decide that now — we're moving the billing migration to next Friday. Karthik, can you write up the proration edge cases in a doc by tomorrow so Fatima can review?
+[00:01:15] Karthik: Yes, I'll have that doc by tomorrow.
+[00:01:18] Fatima: Sounds good, I'll review it as soon as it's up.
+[00:01:22] Priya: One open question — do we still support the old invoicing format after this migration, or are we deprecating it?
+[00:01:30] Karthik: Good question, I don't think we've decided that.
+[00:01:33] Priya: Okay, leaving that open for now. Last thing — end of quarter we need the SOC2 evidence collection done. Fatima, can you own pulling that together?
+[00:01:44] Fatima: I can take that. I'll need help from Rahul on the infra logs side though.
+[00:01:50] Rahul: Happy to help once the rate limiter is out.
+[00:01:53] Priya: Great, that's everything. Thanks all.

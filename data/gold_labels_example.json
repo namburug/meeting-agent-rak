@@ -1,0 +1,8 @@
+{
+  "meeting_date": "2026-08-06",
+  "action_items": [
+    {"text": "Give Rahul access to the staging Redis instance", "owner": "Ananya Iyer", "due_date": "2026-08-06"},
+    {"text": "Write up proration edge cases doc for billing migration", "owner": "Karthik Reddy", "due_date": "2026-08-07"},
+    {"text": "Own SOC2 evidence collection", "owner": "Fatima Sheikh", "due_date": "2026-09-30"}
+  ]
+}
